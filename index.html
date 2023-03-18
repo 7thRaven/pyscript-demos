@@ -8,7 +8,9 @@
     </py-env>
   </head>
   <body>
-    <py-script>
+    <h1>Plotting Random Numbers</h1>
+    <div id="plot"></div>
+    <py-script output="plot">
         import matplotlib.pyplot as plt
         import numpy as np
 
@@ -18,8 +20,6 @@
         fig, ax = plt.subplots()
         ax.scatter(x, y)
         fig
-
-
     </py-script>
   </body>
 </html>
